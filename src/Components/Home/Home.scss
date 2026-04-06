@@ -1,0 +1,117 @@
+@import "../../styles/variables";
+
+.main-title {
+  font-family: $font-logo;
+  font-size: 36px;
+  background: linear-gradient(to right, #f69210, #c7680e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  display: inline-block;
+}
+.home-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .meals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+  }
+}
+
+.meal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #059669;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.view-btn {
+  width: 100%;
+  background-color: #21ba75;
+  border-radius: 20px;
+  padding: 12px;
+}
+.meal-card {
+  background: white;
+  border-radius: 30px;
+  padding: 25px;
+  text-align: center;
+  transition: $transition;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-3px) scale(1.06);
+    box-shadow:
+      0 20px 25px -5px rgba($primary-color, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  .img-container {
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 15px;
+
+    img {
+      transition: transform 0.7s ease;
+      &:hover {
+        transform: scale(1.1) rotate(360deg);
+      }
+    }
+  }
+
+  .area-text {
+    color: #21ba75;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+
+    i {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+  transition: $transition;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.view-btn {
+  display: inline-block;
+  background-color: #21ba75;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  width: 50%;
+  transition: $transition;
+
+  &:hover {
+    background-color: #1a945d;
+    box-shadow: 0 4px 12px rgba(33, 186, 117, 0.4);
+  }
+}

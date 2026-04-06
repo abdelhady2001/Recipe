@@ -1,0 +1,19 @@
+.main-wrapper {
+  flex-grow: 1;
+  margin-left: 300px;
+  width: calc(100% - 300px);
+  padding: 40px;
+  background-color: #f4f2ee;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.nav-menu ul {
+  padding-left: 10px;
+}
+a {
+  text-decoration: none;
+}

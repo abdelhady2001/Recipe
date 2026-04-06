@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.sidebar {
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 25px 15px;
+  z-index: 1000;
+
+  .logo img {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .nav-menu ul li {
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #1f2937;
+    transition: $transition;
+    border: 1px solid #e5e7eb;
+
+    &:hover,
+    &.active {
+      background-color: $primary-color;
+      color: white;
+      border-color: $primary-color;
+      transform: scale(1.02);
+    }
+
+    i {
+      margin-right: 12px;
+    }
+  }
+}
